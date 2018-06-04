@@ -4,5 +4,5 @@
 pacman -Syu --noconfirm
 
 # Install packages
-pacman -S --noconfirm fish base-devel man-db gawk grep gzip less sed tar which coreutils file git tmux neovim python python-pip openldap sssd
+pacman -S --noconfirm fish base-devel clang zlib bzip2 xz man-db gawk grep gzip less sed tar which coreutils file git tmux neovim python python-pip openldap sssd
 pip install bpython virtualfish neovim numpy scipy jupyter requests
