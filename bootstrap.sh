@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# System Configuration
+ln -sf /usr/share/zoneinfo/America/Chicago /etc/localtime
+
 # Initialize pacman databases
 pacman -Syu --noconfirm
 
