@@ -11,10 +11,19 @@ pacman -S --noconfirm fish base-devel clang zlib bzip2 xz man-db gawk grep gzip 
 pip install bpython virtualfish neovim numpy scipy jupyter requests
 
 # Install other packages
+mkdir build
+chgrp nobody build
+chmod g+ws build
+setfacl -m u::rwx,g::rwx build
+setfacl -d --set u::rwx,g::rwx,o::- build
+
+cd build
 git clone https://aur.archlinux.org/yay.git
 cd yay
-makepkg -si
+sudo -u nobody makepkg -si
 cd ..
-rm -rf yay
+
+cd ..
+rm -rf build
 
 yay -S parallel-rust
