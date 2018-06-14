@@ -12,7 +12,7 @@ pacman -S --noconfirm gzip zlib bzip2 xz zip unzip tar
 pacman -S --noconfirm base-devel git clang python python-pip jre8-openjdk gsl
 pacman -S --noconfirm parallel htop tmux neovim xclip
 pacman -S --noconfirm openldap sssd
-pacman -S --noconfirm libxrender
+pacman -S --noconfirm xorg
 
 # Install other packages
 pip install bpython virtualfish neovim numpy scipy jupyter requests
