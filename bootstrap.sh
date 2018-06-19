@@ -9,7 +9,7 @@ pacman -Fy --noconfirm
 
 # Install packages
 pacman -S --noconfirm fish man-db coreutils gawk grep less sed which procps-ng
-pacman -S --noconfirm gzip zlib bzip2 xz zip unzip tar
+pacman -S --noconfirm gzip zlib bzip2 xz zip unzip tar mariadb
 pacman -S --noconfirm base-devel git clang python python-pip pypy3 jre8-openjdk gsl
 pacman -S --noconfirm parallel htop tmux neovim xclip
 pacman -S --noconfirm openldap sssd
